@@ -1,0 +1,11 @@
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 8.17.12.5896]
+    Renderer: NVIDIA GeForce GTS 250
+    Vendor:   NVIDIA
+    VRAM:     1024 MB
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 DF24=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
+<I> Initializing (RawInput).
+<RI> Input initialized.
+Non platform assembly: data-029C6718 (this message is harmless)
+Non platform assembly: data-02A2BB18 (this message is harmless)
