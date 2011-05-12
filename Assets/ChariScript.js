@@ -7,4 +7,5 @@ function Start () {
 function Update() {
     transform.Rotate(0, other.speed, 0);
     transform.Translate(other.speed, 0, 0);
+	
 }
