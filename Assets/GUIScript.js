@@ -1,14 +1,16 @@
 var camera1 : GameObject;
 var camera2 : GameObject;
 var camera3 : GameObject;
-//~ var audioListener1: audioListener;
-//~ var audioListener2: audioListener;
-//~ var audioListener2: audioListener;
+var chari : GameObject ;
 var light1 : Light;
 var light2 : Light;
 var flickering : boolean = false;
 var on : boolean = true;
 var speed = 0.8;
+
+function Start() {
+
+}
 
 
 function OnGUI () {
@@ -79,6 +81,13 @@ function OnGUI () {
 	if (GUI.Button (Rect (240,100,80,20), "kamikaze")) {
 		speed = 2;
 	}
+	
+	GUI.Box (Rect (340,10,100,60), "wow crash!");
+	
+	if (GUI.Button (Rect (350,40,80,20), "Reset")) {
+		chari.GetComponent(ChariScript).Restart();
+	}
+	
 	
 }
 
