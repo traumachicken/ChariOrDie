@@ -51,4 +51,6 @@ function Update() {
 	controller.Move(moveDirection * Time.deltaTime);
 	
 	vertical *= friction ;
+	
+	if ( Mathf.Abs(vertical) < 0.1 )	vertical = 0;
 }
