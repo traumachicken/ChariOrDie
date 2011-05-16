@@ -1,7 +1,6 @@
 var other : GUIScript;
 var start_position : Vector3 ;
 
-
 public var accel : float = 0.15 ;
 public var friction : float = 0.995 ;
 public var maxSpeed : float = 30 ;
