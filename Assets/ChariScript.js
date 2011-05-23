@@ -1,55 +1,79 @@
-var other : GUIScript;
-var start_position : Vector3 ;
+public var accel : float = 500 ;
+public var gravity : float = 3000 ;
 
-public var accel : float = 0.15 ;
-public var friction : float = 0.995 ;
-public var maxSpeed : float = 30 ;
-public var rotationSpeed : float = 8.0;
-public var jumpSpeed : float = 50.0 ;
-public var gravity : float = 1.0 ;
-
-private var vertical : float = 0 ;
-private var horizonal : float = 0;
-private var isControllable : boolean  = true ;
-private var controller : CharacterController ;
-private var moveDirection : Vector3 = Vector3.zero ;
 
 function Start () {
-	start_position = transform.position;
-	controller = GetComponent( CharacterController );
+	
+	// set Center of Mass
+	var mass = transform.Find("CenterOfMass").transform.localPosition ;
+	rigidbody.centerOfMass = mass ;
+	
+	// freeze rotation
+	//~ rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
+	
+	rigidbody.maxAngularVelocity = 5 ;
 }
 
 function Update() {
+
+	if ( Input.GetKeyDown("r") )	Reset() ;
 	
-    if (controller.isGrounded) {
+	
+	
+}
+
+function FixedUpdate() {
 		
-		horizonal = 0 ;
-		
-		vertical += Input.GetAxis("Vertical") * accel ;
-		if ( vertical > maxSpeed )	vertical = maxSpeed ;
-        
-        
-        var rot : float = Input.GetAxis("Horizontal") ;
-		if( vertical < 3.0 )	rot *= vertical / 3.0 ;
-        controller.transform.Rotate( 0, rot, 0 );
-        if (Input.GetButton ("Jump")) {
-            horizonal = jumpSpeed;
-        }
-    }
+	// forward accel
+	rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * accel );
 	
-    // Apply gravity
-    horizonal -= gravity ;
-    
-	// Don't back
-	if ( vertical < -1.5 )	vertical = -1.5 ;
+	// steering
+	var rot : float = Input.GetAxis("Horizontal") ;
+	transform.Find("FrontWheelCollider").transform.Rotate(Vector3(0,rot,0)) ;
 	
-    // Move the controller
-    moveDirection = Vector3( 0, horizonal, vertical );
-	moveDirection = transform.TransformDirection(moveDirection);
+	// balance
+	var tilt = rigidbody.rotation.eulerAngles.z ;
+	if ( tilt > 180 ) tilt -= 360 ;
 	
-	controller.Move(moveDirection * Time.deltaTime);
+	// horizonal balance
+	//~ transform.Find("CenterOfMass").transform.localPosition.x = Mathf.Sin( tilt * Mathf.Deg2Rad ) * 0.4 ;
 	
-	vertical *= friction ;
 	
-	if ( Mathf.Abs(vertical) < 0.1 )	vertical = 0;
+	// vertical balance
+	transform.Find("CenterOfMass").transform.localPosition.y = - ( tilt * tilt ) / ( 90 * 90 ) * 50 ;
+	if ( transform.Find("CenterOfMass").transform.localPosition.y < -6 )	transform.Find("CenterOfMass").transform.localPosition.y = -6;
+	rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
+	
+	// Wheel Animation
+	transform.Find("Chari").transform.Find("FrontWheel").transform.Rotate(Vector3(0,rot,0));
+	
+	// Tilt Animation
+	transform.Find("Chari").transform.Rotate(Vector3(0, 0, rot)) ;
+	
+	// gravity
+    rigidbody.AddForce( Vector3(0, -1, 0) * gravity );
+	
+	//~ TiltControll() ;
+}
+
+function TiltControll() {
+	transform.Find("CenterOfMass").transform.position.x += 0.01 ;
+	//~ print ( rigidbody.angularVelocity ) ;
+	rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
+}
+
+function Reset() {
+	// reset rotation
+	var newRot = Quaternion.identity ;
+	newRot.y = transform.rotation.y ;
+	transform.rotation = newRot ;
+	
+	// reset velocity
+	rigidbody.velocity = Vector3.zero ;
+	
+	// reset torque
+	rigidbody.angularVelocity = Vector3.zero ;
+	
+	// reset position
+	transform.position.y += 10 ;
 }
