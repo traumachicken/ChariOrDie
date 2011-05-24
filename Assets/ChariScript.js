@@ -35,14 +35,18 @@ function FixedUpdate() {
 	var tilt = rigidbody.rotation.eulerAngles.z ;
 	if ( tilt > 180 ) tilt -= 360 ;
 	
+	// prevent Z rotation fuck
+	var zangle = rigidbody.rotation.eulerAngles.z ;
+	var eulerAngleVelocity = Vector3( 0, 0, -zangle ) ;
+	rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(eulerAngleVelocity)) ;
+	
 	// horizonal balance
 	//~ transform.Find("CenterOfMass").transform.localPosition.x = Mathf.Sin( tilt * Mathf.Deg2Rad ) * 0.4 ;
 	
-	
 	// vertical balance
-	transform.Find("CenterOfMass").transform.localPosition.y = - ( tilt * tilt ) / ( 90 * 90 ) * 50 ;
-	if ( transform.Find("CenterOfMass").transform.localPosition.y < -6 )	transform.Find("CenterOfMass").transform.localPosition.y = -6;
-	rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
+	//~ transform.Find("CenterOfMass").transform.localPosition.y = - ( tilt * tilt ) / ( 90 * 90 ) * 50 ;
+	//~ if ( transform.Find("CenterOfMass").transform.localPosition.y < -6 )	transform.Find("CenterOfMass").transform.localPosition.y = -6;
+	//~ rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
 	
 	// Wheel Animation
 	transform.Find("Chari").transform.Find("FrontWheel").transform.Rotate(Vector3(0,rot,0));
