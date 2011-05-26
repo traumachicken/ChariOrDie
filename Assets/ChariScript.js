@@ -18,14 +18,13 @@ function Update() {
 
 	if ( Input.GetKeyDown("r") )	Reset() ;
 	
-	
-	
 }
 
 function FixedUpdate() {
 		
 	// forward accel
-	rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * accel );
+	//~ rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * accel );
+	transform.Find("RearWheelCollider").GetComponent(WheelCollider).motorTorque = Input.GetAxis("Vertical") * accel ;
 	
 	// steering
 	var rot : float = Input.GetAxis("Horizontal") ;
@@ -54,14 +53,14 @@ function FixedUpdate() {
 	// gravity
     rigidbody.AddForce( Vector3(0, -1, 0) * gravity );
 	
-	TiltControll() ;
+	//~ TiltControll() ;
 }
 
 function TiltControll() {
 	// prevent Z rotation fuck
-	//~ var eulerAngleVelocity = rigidbody.rotation.eulerAngles ;
-	//~ eulerAngleVelocity.z = 0 ;
-	//~ rigidbody.MoveRotation(Quaternion.Euler(eulerAngleVelocity)) ;
+	var eulerAngleVelocity = rigidbody.rotation.eulerAngles ;
+	eulerAngleVelocity.z = 0 ;
+	rigidbody.MoveRotation(Quaternion.Euler(eulerAngleVelocity)) ;
 }
 
 function Reset() {
