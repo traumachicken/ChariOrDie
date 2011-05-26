@@ -1,5 +1,8 @@
 public var accel : float = 500 ;
 public var gravity : float = 0 ;
+public var steeringAccel : float = 20 ;
+public var steeringPeek : float = 20 ;
+public var steeringBottom : float = 10 ;
 
 
 function Start () {
@@ -21,20 +24,24 @@ function Update() {
 }
 
 function FixedUpdate() {
-		
+	
 	// forward accel
 	//~ rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * accel );
 	transform.Find("RearWheelCollider").GetComponent(WheelCollider).motorTorque = Input.GetAxis("Vertical") * accel ;
 	
+	// get forward velocity
+	var forwardVelocity = transform.InverseTransformDirection(rigidbody.velocity).z ;
+	
 	// steering
 	var rot : float = Input.GetAxis("Horizontal") ;
-	transform.Find("FrontWheelCollider").transform.Rotate(Vector3(0,rot,0)) ;
-	
+	//~ transform.Find("FrontWheelCollider").transform.Rotate(Vector3(0,rot,0)) ;
+	//~ transform.Find("FrontWheelCollider").GetComponent( WheelCollider ).steerAngle = rot * steeringAccel * ( 1 / ( forwardVelocity + 1 ) ) ;
+	var steer = Mathf.Clamp(  rot * 20 * ( 1 / forwardVelocity ), -100, 100 )  ;
+	transform.Find("FrontWheelCollider").GetComponent( WheelCollider ).steerAngle = steer  ;
+	print ( steer ) ;
 	// balance
 	var tilt = rigidbody.rotation.eulerAngles.z ;
 	if ( tilt > 180 ) tilt -= 360 ;
-	
-	
 	
 	// horizonal balance
 	//~ transform.Find("CenterOfMass").transform.localPosition.x = Mathf.Sin( tilt * Mathf.Deg2Rad ) * 0.4 ;
@@ -45,10 +52,10 @@ function FixedUpdate() {
 	//~ rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
 	
 	// Wheel Animation
-	transform.Find("Chari").transform.Find("FrontWheel").transform.Rotate(Vector3(0,rot,0));
+	//~ transform.Find("Chari").transform.Find("FrontWheel").transform.Rotate(Vector3(0,rot,0));
 	
 	// Tilt Animation
-	transform.Find("Chari").transform.Rotate(Vector3(0, 0, rot)) ;
+	//~ transform.Find("Chari").transform.Rotate(Vector3(0, 0, rot );
 	
 	// gravity
     rigidbody.AddForce( Vector3(0, -1, 0) * gravity );
