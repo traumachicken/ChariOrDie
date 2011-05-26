@@ -1,5 +1,5 @@
 public var accel : float = 500 ;
-public var gravity : float = 3000 ;
+public var gravity : float = 0 ;
 
 
 function Start () {
@@ -35,10 +35,7 @@ function FixedUpdate() {
 	var tilt = rigidbody.rotation.eulerAngles.z ;
 	if ( tilt > 180 ) tilt -= 360 ;
 	
-	// prevent Z rotation fuck
-	var zangle = rigidbody.rotation.eulerAngles.z ;
-	var eulerAngleVelocity = Vector3( 0, 0, -zangle ) ;
-	rigidbody.MoveRotation(rigidbody.rotation * Quaternion.Euler(eulerAngleVelocity)) ;
+	
 	
 	// horizonal balance
 	//~ transform.Find("CenterOfMass").transform.localPosition.x = Mathf.Sin( tilt * Mathf.Deg2Rad ) * 0.4 ;
@@ -57,13 +54,14 @@ function FixedUpdate() {
 	// gravity
     rigidbody.AddForce( Vector3(0, -1, 0) * gravity );
 	
-	//~ TiltControll() ;
+	TiltControll() ;
 }
 
 function TiltControll() {
-	transform.Find("CenterOfMass").transform.position.x += 0.01 ;
-	//~ print ( rigidbody.angularVelocity ) ;
-	rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
+	// prevent Z rotation fuck
+	//~ var eulerAngleVelocity = rigidbody.rotation.eulerAngles ;
+	//~ eulerAngleVelocity.z = 0 ;
+	//~ rigidbody.MoveRotation(Quaternion.Euler(eulerAngleVelocity)) ;
 }
 
 function Reset() {
