@@ -1,9 +1,12 @@
-public var accel : float = 500 ;
-public var gravity : float = 0 ;
+public var accel : float = 1500 ;
+public var brake : float = 2000 ;
+public var gravity : float = 3000 ;
 public var steeringAccel : float = 20 ;
-public var steeringPeek : float = 20 ;
-public var steeringBottom : float = 10 ;
+public var steeringMax : float = 40 ;
+public var steeringMin : float = 10 ;
+public var maxVelocity : float = 100 ;
 
+private var steeringDR : float = 0 ;
 
 function Start () {
 	
@@ -11,10 +14,10 @@ function Start () {
 	var mass = transform.Find("CenterOfMass").transform.localPosition ;
 	rigidbody.centerOfMass = mass ;
 	
-	// freeze rotation
-	//~ rigidbody.constraints = RigidbodyConstraints.FreezeRotationZ;
+	SetSuspension() ;
 	
-	rigidbody.maxAngularVelocity = 5 ;
+	steeringDR = ( maxVelocity ) * ( maxVelocity ) / steeringMax ;
+	
 }
 
 function Update() {
@@ -25,42 +28,50 @@ function Update() {
 
 function FixedUpdate() {
 	
-	// forward accel
-	//~ rigidbody.AddForce(transform.forward * Input.GetAxis("Vertical") * accel );
-	transform.Find("RearWheelCollider").GetComponent(WheelCollider).motorTorque = Input.GetAxis("Vertical") * accel ;
+	transform.Find("RearWheelCollider").GetComponent(WheelCollider).motorTorque /= 1.5;
+	transform.Find("RearWheelCollider").GetComponent(WheelCollider).brakeTorque /= 1.5 ;
 	
-	// get forward velocity
 	var forwardVelocity = transform.InverseTransformDirection(rigidbody.velocity).z ;
+	// forward accel
+	if ( Input.GetKeyDown("w") && forwardVelocity < maxVelocity ){
+		transform.Find("RearWheelCollider").GetComponent(WheelCollider).motorTorque = accel;
+	}
+	if ( Input.GetKey("s") ){
+		transform.Find("RearWheelCollider").GetComponent(WheelCollider).brakeTorque = brake;
+	}
 	
 	// steering
-	var rot : float = Input.GetAxis("Horizontal") ;
-	//~ transform.Find("FrontWheelCollider").transform.Rotate(Vector3(0,rot,0)) ;
-	//~ transform.Find("FrontWheelCollider").GetComponent( WheelCollider ).steerAngle = rot * steeringAccel * ( 1 / ( forwardVelocity + 1 ) ) ;
-	var steer = Mathf.Clamp(  rot * 20 * ( 1 / forwardVelocity ), -100, 100 )  ;
-	transform.Find("FrontWheelCollider").GetComponent( WheelCollider ).steerAngle = steer  ;
-	print ( steer ) ;
-	// balance
-	var tilt = rigidbody.rotation.eulerAngles.z ;
-	if ( tilt > 180 ) tilt -= 360 ;
-	
-	// horizonal balance
-	//~ transform.Find("CenterOfMass").transform.localPosition.x = Mathf.Sin( tilt * Mathf.Deg2Rad ) * 0.4 ;
-	
-	// vertical balance
-	//~ transform.Find("CenterOfMass").transform.localPosition.y = - ( tilt * tilt ) / ( 90 * 90 ) * 50 ;
-	//~ if ( transform.Find("CenterOfMass").transform.localPosition.y < -6 )	transform.Find("CenterOfMass").transform.localPosition.y = -6;
-	//~ rigidbody.centerOfMass = transform.Find("CenterOfMass").transform.localPosition ;
-	
-	// Wheel Animation
-	//~ transform.Find("Chari").transform.Find("FrontWheel").transform.Rotate(Vector3(0,rot,0));
-	
-	// Tilt Animation
-	//~ transform.Find("Chari").transform.Rotate(Vector3(0, 0, rot );
+	var steer2 = steeringMax - ( ( forwardVelocity / ( maxVelocity / 2 ) ) * steeringMax ) ;
+	if ( steer2 < steeringMin ) steer2 = steeringMin ;
+	var steer3 = Input.GetAxis("Horizontal") * steer2 ;
+	transform.Find("FrontWheelCollider").GetComponent( WheelCollider ).steerAngle = steer3;
 	
 	// gravity
     rigidbody.AddForce( Vector3(0, -1, 0) * gravity );
 	
-	//~ TiltControll() ;
+	// animation 
+	Animate() ;
+	
+}
+
+function Animate() {
+	
+	var bike = transform.Find("Chari").transform.Find("superbicycle") ;
+	var steer = transform.Find("FrontWheelCollider").GetComponent(WheelCollider).steerAngle ;
+	
+	// Wheel Animation
+	bike.transform.Find("FrontWheel").transform.localEulerAngles = Vector3(0,steer,0) ;
+	bike.transform.Find("handle").transform.localEulerAngles = Vector3(270,steer,0) ;
+	
+	// Tilt Animation
+	bike.transform.localEulerAngles = Vector3(0, 180, -steer/2) ;
+	
+	var roll = transform.Find("FrontWheelCollider").GetComponent(WheelCollider).rpm ;
+	// Wheel Animation
+	bike.transform.Find("FrontWheel").transform.Rotate( roll, 0, 0 ) ;
+	bike.transform.Find("RearWheel").transform.Rotate( roll, 0, 0 ) ;
+	//~ print (roll) ;
+
 }
 
 function TiltControll() {
@@ -68,6 +79,37 @@ function TiltControll() {
 	var eulerAngleVelocity = rigidbody.rotation.eulerAngles ;
 	eulerAngleVelocity.z = 0 ;
 	rigidbody.MoveRotation(Quaternion.Euler(eulerAngleVelocity)) ;
+}
+
+function SetSuspension() {
+	var distance = 0.1 ;
+	var spring = 100 ;
+	var damp = 100 ;
+	var target = 1 ;
+	
+	var fwc = transform.Find("FrontWheelCollider").GetComponent(WheelCollider) ;
+	fwc.suspensionDistance = distance ;
+	fwc.suspensionSpring.spring = spring ;
+	fwc.suspensionSpring.damper = damp ;
+	fwc.suspensionSpring.targetPosition = target ;
+	
+	fwc = transform.Find("RearWheelCollider").GetComponent(WheelCollider) ;
+	fwc.suspensionDistance = distance ;
+	fwc.suspensionSpring.spring = spring ;
+	fwc.suspensionSpring.damper = damp ;
+	fwc.suspensionSpring.targetPosition = target ;
+	
+	fwc = transform.Find("RearTrainingWheelColliderR").GetComponent(WheelCollider) ;
+	fwc.suspensionDistance = distance ;
+	fwc.suspensionSpring.spring = spring ;
+	fwc.suspensionSpring.damper = damp ;
+	fwc.suspensionSpring.targetPosition = target ;
+	
+	fwc = transform.Find("RearTrainingWheelColliderL").GetComponent(WheelCollider) ;
+	fwc.suspensionDistance = distance ;
+	fwc.suspensionSpring.spring = spring ;
+	fwc.suspensionSpring.damper = damp ;
+	fwc.suspensionSpring.targetPosition = target ;
 }
 
 function Reset() {
