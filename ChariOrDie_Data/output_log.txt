@@ -7,5 +7,493 @@ Direct3D:
 desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
 <I> Initializing (RawInput).
 <RI> Input initialized.
-Non platform assembly: data-029C6718 (this message is harmless)
-Non platform assembly: data-02A2BB18 (this message is harmless)
+Non platform assembly: data-02E36328 (this message is harmless)
+Non platform assembly: data-06E40320 (this message is harmless)
+Platform assembly: C:\Users\Traumachicken\Documents\ChariOrDie\ChariOrDie_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Traumachicken\Documents\ChariOrDie\ChariOrDie_Data\Managed\Boo.Lang.dll (this message is harmless)
+29.29943, 41.02845, -36.54779
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-26.96225, 41.02845, -5.335054
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+28.45985, 41.02845, -94.73946
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-9.511135, 41.02845, -35.153
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-2.865174, 41.02845, 86.63338
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+43.45418, 41.02845, -58.03448
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-35.34288, 41.02845, 53.02445
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-24.17065, 41.02845, 43.08934
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-85.08125, 41.02845, -6.328433
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-0.308252, 41.02845, -57.78551
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-91.56586, 41.02845, 18.68135
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-58.66586, 41.02845, 77.23467
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-54.18733, 41.02845, 10.34075
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-76.73757, 41.02845, -4.762797
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+50.19297, 41.02845, -72.23885
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-27.51289, 41.02845, 69.62062
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-56.68517, 41.02845, -13.02777
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-62.26536, 41.02845, 32.04827
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-71.64051, 41.02845, 9.592336
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-66.23811, 41.02845, -20.96697
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-37.5525, 41.02845, 51.79348
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-71.05488, 41.02845, 20.47072
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-45.39701, 41.02845, 19.20081
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-19.53408, 41.02845, 61.75429
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+80.49506, 41.02845, 29.4568
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+14.19304, 41.02845, 40.78227
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-85.97479, 41.02845, -48.98042
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+54.31237, 41.02845, 30.78865
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+-9.605219, 41.02845, -99.27081
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+77.13028, 41.02845, 51.94526
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyManagerScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\EnemyManagerScript.js:12)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+1
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+2
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\6bc5f79e0a4296d6\Runtime\ExportGenerated\StandalonePlayer\BaseClass.cs:1087)
+ZombieScript:Start() (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:29)
+ 
+(Filename: C Line: 0)
+
+6.247921
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ZombieScript:OnTriggerEnter(Collider) (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:103)
+ 
+(Filename: C Line: 0)
+
+2.397744
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ZombieScript:OnTriggerEnter(Collider) (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:103)
+ 
+(Filename: C Line: 0)
+
+4.158824
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ZombieScript:OnTriggerEnter(Collider) (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:103)
+ 
+(Filename: C Line: 0)
+
+1.836465
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+ZombieScript:OnTriggerEnter(Collider) (at C:\Users\Traumachicken\Documents\ChariOrDie\Assets\Scripts\ZombieScript.js:103)
+ 
+(Filename: C Line: 0)
+
