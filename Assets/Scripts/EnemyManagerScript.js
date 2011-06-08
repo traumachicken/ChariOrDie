@@ -1,18 +1,34 @@
-public var spawn : Transform ;
-public var zombie : Transform ;
+public var zombie_prefab : Transform ;
+
+private var zombies : Array ;
 
 function Start() {
-	for( var i : int = 0 ; i < 30 ; i++ )
+	// load dictionary
+	var d : SimpleDictionary = ScriptableObject.CreateInstance(typeof(SimpleDictionary));
+	
+	// get number of zombie value from dictionary
+	//~ var obj = d.Get("number_of_zombie_spawn");
+	//~ print ( d.Get("number_of_zombie_spawn").name.ToString );
+	//~ var number_of_zombie_spawn : int = int.Parse(obj.ToString);
+	var number_of_zombie_spawn : int = int.Parse("10");
+	//~ print ( number_of_zombie_spawn ) ;
+	// spawn zombies
+	
+	// initiate zombies
+	for( var i : int = 0 ; i < number_of_zombie_spawn ; i++ )
 	{
-		// circle spawn area
-		var newPosition : Vector2 = Random.insideUnitCircle * 100;
-		// create instance
-		Instantiate (zombie, Vector3(newPosition.x, spawn.position.y, newPosition.y), Quaternion.identity);
+		// add zombie to arry
+		Instantiate(zombie_prefab, Vector3.zero, Quaternion.identity);
 		
-		Debug.Log( newPosition.x +", " +  spawn.position.y + ", " + newPosition.y ) ;
+		//~ zombies.Push(Instantiate(zombie_prefab, Vector3.zero, Quaternion.identity));
+		// circle spawn area
 	}
 }
 
 
 function Update () {
+}
+
+function Spawn() {
+	//~ zombies.
 }

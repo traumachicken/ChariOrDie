@@ -1,4 +1,4 @@
-public var accel : float = 1500 ;
+public var accel : float = 2000 ;
 public var brake : float = 2000 ;
 public var gravity : float = 3000 ;
 public var steeringAccel : float = 20 ;
@@ -17,7 +17,7 @@ function Start () {
 	SetSuspension() ;
 	
 	steeringDR = ( maxVelocity ) * ( maxVelocity ) / steeringMax ;
-	
+		
 }
 
 function Update() {

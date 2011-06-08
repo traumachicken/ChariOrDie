@@ -12,24 +12,37 @@ private var isGrounded : boolean = false ;
 private var isDead : boolean = false ;
 private var player : GameObject ;
 private var currentHealth = health ;
+private var isInit : boolean = false ;
 
 private var skins : Array ;
 
 function Start() {
+	enabled = false;
 	//~ character = GetComponent(CharacterController) ;
 	//~ rigidbody.freezeRotation = true ;
-	player = GameObject.FindWithTag("Player") ;
 	
+}
+
+function Initialize() {
+	player = GameObject.FindWithTag("Player") ;
+	InitializeSkins();
+	SetRandomSkin();
+}
+
+function InitializeSkins() {
 	skins = new Array() ;
 	skins.Push(Resources.Load("Textures/zombie_tex"));
 	skins.Push(Resources.Load("Textures/zombie_tex_01"));
 	skins.Push(Resources.Load("Textures/zombie_tex_02"));
-	
+}
+
+function SetRandomSkin() {
 	var skin_number = Mathf.FloorToInt( Random.value * skins.length - 0.001 );
 	transform.Find("zombie").transform.Find("Armature").transform.Find("Master").renderer.material.mainTexture = skins[skin_number];
 }
 
 function Update () {
+	if ( !isInit )	Initialize() ;
 
 	if ( currentHealth < 1 )	Dead() ;
 	
@@ -126,7 +139,9 @@ function hitWithChainsaw( damage : float ) {
 
 // Dead ------------------------------------------------------------------
 function Dead() {
-	Restart() ;
+	health = 0 ;
+	
+	//~ Restart() ;
 }
 
 
